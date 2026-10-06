@@ -42,7 +42,7 @@ Hozircha **BioScan** loyihasida Django'dagi jonli tizimni **FastAPI** ga ko'chir
 - ⚡ **Performance** — Redis cache, Celery workers, `ab` benchmark bilan o'lchash
 - 🤖 **AI integratsiyasi** — OpenRouter Vision/Chat, LLM-powered endpoint'lar
 - 🐳 **DevOps** — Docker, nginx, systemd, VPS'da zero-downtime cutover
-- 🧪 **Sifat kafolati** — pytest-asyncio (41/41 ✅), CI'ga tayyor
+- 🧪 **Sifat kafolati** — pytest-asyncio (34/34 ✅), CI'ga tayyor
 - 📱 **Integratsiya** — Telegram bot/WebApp, Android APK bilan uzluksiz ishlash
 
 </td>
@@ -67,7 +67,7 @@ I migrated a live Django backend to **FastAPI**, reaching:
 - ⚡ **Performance** — Redis caching, Celery workers, benchmarking with `ab`
 - 🤖 **AI integration** — OpenRouter Vision/Chat, LLM-powered endpoints
 - 🐳 **DevOps** — Docker, nginx, systemd, zero-downtime cutover on VPS
-- 🧪 **Quality** — pytest-asyncio (41/41 ✅), CI-ready
+- 🧪 **Quality** — pytest-asyncio (34/34 ✅), CI-ready
 - 📱 **Integration** — Telegram bot & WebApp, Android APK compatibility
 
 </td>
@@ -132,7 +132,7 @@ I migrated a live Django backend to **FastAPI**, reaching:
 
 Django backendning teng huquqli **asinxron** portasi. AI (OpenRouter) bilan tur aniqlash, Telegram bot, PDF yearbook.
 
-`41/41 test ✅` · `~600 req/s` · `0 downtime`
+`34/34 test ✅` · `~600 req/s` · `0 downtime`
 
 </td>
 <td width="50%">
@@ -183,10 +183,6 @@ GitHub profil sozlash qo'llanmasi, README shablonlari va GitHub Actions namunala
 <br/>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=Jahongir-Ibodullayev&hide_border=true&background=0D1117&stroke=58A6FF&ring=2CA5E0&fire=2CA5E0&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=2CA5E0&sideLabels=8b949e&dates=8b949e)](https://github.com/Jahongir-Ibodullayev)
-
-<img src="https://github-profile-trophy.vercel.app/?username=Jahongir-Ibodullayev&theme=onedark&no-frame=true&no-margin=true&column=7" alt="Trophies" />
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Jahongir-Ibodullayev&bg_color=0d1117&color=c9d1d9&line=2CA5E0&point=58a6ff&area=true&area_color=2CA5E0&hide_border=true)](https://github.com/Jahongir-Ibodullayev)
 
 </div>
 
