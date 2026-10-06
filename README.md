@@ -27,23 +27,24 @@
 
 Backend dasturchiman. Asosan **Python** da ishlayman — tez, barqaror va **o'lchanadigan** API'lar yozaman.
 
-Hozircha **BioScan** loyihasida Django'dagi jonli tizimni **FastAPI** ga ko'chirish ustida ishlayman:
+Men uchun `~2 ms` va `~600 req/s` — shunchaki raqam emas, balki **benchmark bilan isbotlangan** natija. Har bir endpoint'ni o'lchab, keraksiz so'rovlarni kesib, keshni to'g'ri joylashga ishonaman:
 
-| Ko'rsatkich | Oldin (Django) | Keyin (FastAPI) | Natija |
-|---|---|---|---|
-| Latensiya | 8–12 ms | **2–4 ms** | **3× tezroq** |
-| Throughput | ~150 req/s | **~600 req/s** | **4× ko'proq** |
-| Downtime | — | — | **0** |
+| Yondashuv | Nima uchun |
+|---|---|
+| Avval **o'lchayman**, keyin optimizatsiya qilaman | Sezgi bilan emas, raqam bilan qaror qabul qilaman |
+| **Async** va **event-loop** | I/O kutish vaqti — eng qimmat vaqt, uni behuda sarflash kerak emas |
+| **Xatolikni oldindan** hisoblash | Service ishlamasa — bezovta qilmaydi, `fallback` bilan davom etadi |
+| **Test bilan** o'zgartirish | Refactor qilganda ham buzilmaydi |
 
 **Nima qila olaman:**
 
 - 🏗️ **API arxitekturasi** — FastAPI, SQLAlchemy 2.0 (async), PostgreSQL, Alembic
-- 🔐 **Auth tizimlari** — JWT, OTP (SMS/Telegram), FCM push, refresh-token rotation
+- 🔐 **Auth tizimlari** — JWT, refresh-token rotation, xavfsiz sessiya boshqaruvi
 - ⚡ **Performance** — Redis cache, Celery workers, `ab` benchmark bilan o'lchash
 - 🤖 **AI integratsiyasi** — OpenRouter Vision/Chat, LLM-powered endpoint'lar
-- 🐳 **DevOps** — Docker, nginx, systemd, VPS'da zero-downtime cutover
-- 🧪 **Sifat kafolati** — pytest-asyncio (34/34 ✅), CI'ga tayyor
-- 📱 **Integratsiya** — Telegram bot/WebApp, Android APK bilan uzluksiz ishlash
+- 🐳 **DevOps** — Docker, nginx, systemd, VPS'da kamikaze emas, **rollback mumkin** cutover
+- 🧪 **Sifat kafolati** — pytest-asyncio, CI'ga tayyor kod
+- 📱 **Integratsiya** — Telegram bot/WebApp, mobil ilova bilan uzluksiz ishlash
 
 </td>
 <td width="45%">
@@ -52,23 +53,24 @@ Hozircha **BioScan** loyihasida Django'dagi jonli tizimni **FastAPI** ga ko'chir
 
 Backend developer focused on **Python**. I build fast, observable, production-grade APIs.
 
-I migrated a live Django backend to **FastAPI**, reaching:
+For me, `~2 ms` and `~600 req/s` aren't just numbers — they're **benchmark-proven** results. I measure every endpoint, cut redundant queries and place caches deliberately:
 
-| Metric | Before | After | Gain |
-|---|---|---|---|
-| Latency | 8–12 ms | **2–4 ms** | **3× faster** |
-| Throughput | ~150 req/s | **~600 req/s** | **4× higher** |
-| Downtime | — | — | **0** |
+| Approach | Why |
+|---|---|
+| **Measure first**, then optimize | Decisions based on data, not gut feeling |
+| **Async** and the event loop | I/O wait is the most expensive time — don't waste it |
+| **Plan for failure** | If a service dies, it degrades gracefully instead of breaking |
+| **Test before changing** | Refactors never break what already works |
 
 **What I can do:**
 
 - 🏗️ **API architecture** — FastAPI, SQLAlchemy 2.0 (async), PostgreSQL, Alembic
-- 🔐 **Auth systems** — JWT, SMS/Telegram OTP, FCM push, refresh-token rotation
+- 🔐 **Auth systems** — JWT, refresh-token rotation, secure session handling
 - ⚡ **Performance** — Redis caching, Celery workers, benchmarking with `ab`
 - 🤖 **AI integration** — OpenRouter Vision/Chat, LLM-powered endpoints
-- 🐳 **DevOps** — Docker, nginx, systemd, zero-downtime cutover on VPS
-- 🧪 **Quality** — pytest-asyncio (34/34 ✅), CI-ready
-- 📱 **Integration** — Telegram bot & WebApp, Android APK compatibility
+- 🐳 **DevOps** — Docker, nginx, systemd, zero-downtime cutover **with rollback**
+- 🧪 **Quality** — pytest-asyncio, CI-ready code
+- 📱 **Integration** — Telegram bot & WebApp, seamless mobile integration
 
 </td>
 </tr>
@@ -190,7 +192,7 @@ GitHub profil sozlash qo'llanmasi, README shablonlari va GitHub Actions namunala
 
 ## 🎯 What's next / Rejalarda
 
-- [ ] BioScan uchun **Docker Compose** (lokal muhit)
+- [ ] **Lokal muhitni bir buyruqda** ko'tarish — **Docker Compose**
 - [ ] **GitHub Actions CI/CD** — push'da avtomatik test + deploy
 - [ ] **Rate limiting** va **observability** (Sentry + structured logs)
 - [ ] OpenAPI dokumentatsiyasini to'liq yozish
