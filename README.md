@@ -9,9 +9,9 @@
 <img src="https://img.shields.io/badge/Location-Uzbekistan-0E7490?style=flat-square&logo=google-maps&logoColor=white" alt="Location" />
 <img src="https://img.shields.io/badge/Status-Open%20to%20Work-22c55e?style=flat-square" alt="Open to work" />
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](#)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](#)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](#)
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/Jahongir_Ibodullaev)
+[![Telegram](https://img.shields.io/badge/@iqtech_admin-2CA5E0?style=flat-square&logo=telegram&logoColor=white)](https://t.me/iqtech_admin)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ibodullaevjahongir62@gmail.com)
 
 </div>
 
@@ -208,9 +208,9 @@ GitHub profil sozlash qo'llanmasi, README shablonlari va GitHub Actions namunala
 
 | | |
 |:---:|:---:|
-| 💬 **Telegram** | [@jahongir](https://t.me/) |
-| 📧 **Email** | [contact](mailto:) |
-| 🔗 **LinkedIn** | [profile](#) |
+| 💬 **Telegram** | [**@Jahongir_Ibodullaev**](https://t.me/Jahongir_Ibodullaev) |
+| 💼 **Telegram (work)** | [**@iqtech_admin**](https://t.me/iqtech_admin) |
+| 📧 **Email** | [**ibodullaevjahongir62@gmail.com**](mailto:ibodullaevjahongir62@gmail.com) |
 | 🌐 **Portfolio** | coming soon |
 
 **Issues · Pull Requests · Hamkorlik — doim xush kelibsiz!**
